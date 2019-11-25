@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      div{
+
+          position: fixed;
+            /* aboslute
+            static
+            fixed
+            relative
+             */
+             /* zmiana positon na fixed powoduje ze nasz element jest zawsze w tym samym miejscu, scroll nie powoduje jego zostania na gorze okna przegladarki */
+          background-color: black;
+          top:50%;
+          /* !!!! zawsze gdy zmieniamy wartosc wlasciwosci "position" na "fixed" musimy dodac top,left, albo right,bottom */
+          left: 50%;
+          /* jako ze chcielismy zeby nasz kwadrat byl idealnie na srodku strony ustawiamy wartosci top i left na 50%  */
+          /* lecz jak zobaczycie nasz kwadrat jest deliaktnie ponizej idealnego srodka poniewaz jego uklad wspolrzednych zaczyna sie w lewym gornym rogu zeby to zmienic i ustawic
+            go idelanie na srodku strony musimy dodac linie 27.
+
+           */
+          transform: translate(-50%,-50%);
+          /* przesuwa punk (0,0) ukladu w spolrzednych o 50% w dol a potem o 50% w prawo */
+          /* dalismy wartosc -50% bo bez "-" przesunelisbysmy ten punk do gory i w lewo */
+      }
+      body{
+          height: 10000px;
+          /* sztucznie wymuszamy pojawienie sie paski do scrolla na naszej stronie */
+      }
+    </style>
+</head>
+<body>
+    <div></div>
+    <script src="zadanieDrugie.js"></script>
+</body>
+</html>

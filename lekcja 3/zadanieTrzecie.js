@@ -35,3 +35,5 @@ window.addEventListener("scroll", chnageHeight = () => {
     }
 })
 
+
+//zadanie analogiczne do zadania 2, z tym ze tym razem "opuszczalismy" kwadrat z gory do polowy a potem "chowalismy go "
