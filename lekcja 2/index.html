@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        button{
+            display:block;
+            /* powoduje ze nasz przycisk nie przesuwa sie wraz z dodaniem nowego elementu */
+        }
+        div{
+            float: left;
+            /* nasze elementy dodaja sie w lini poziomej a nie pionowej */
+
+            height: 30px;
+            /* okreslamy wysokosc elementu */
+
+            width: 30px;
+            /* szerokosc elementu  */
+
+            background-color: black;
+            /* kolor jego tla */
+
+            margin-right: 10px;
+            /* prawy margines, w celu odepchniecia od siebie elementow */
+
+            color:white;
+            /* zmieniamy kolor czcionki na bialy, aby na czarnym tle byla widoczna */
+        }
+        .cricle {
+
+            /* tworzymy klase css ktora bedzie dodawana co do 5 elementu w celu zmiany jego wygladu */
+            background-color: white;
+            /* zmieniamy kolor tla na bialy */
+            color:black;
+            /* kolor czcionki na bialy */
+            border-radius: 50%;
+            /* border radius zmienia promien naszego obramowania na 50% dzieki czemu towrzy kolo */
+
+            border: 2px solid black;
+            /* tworzymy krawedz naszego okraglego elementu, nadajemu krawdzi 2px szerokosci, solid odpowiada za to ze jest linia ciagla, oraz jej kolor na czarny */
+        }
+    </style>
+</head>
+<body>
+    <button  >add element</button>
+    <script src="main.js"></script>
+    <!-- wskazujemy sciezke do pliku js  -->
+</body>
+</html>
